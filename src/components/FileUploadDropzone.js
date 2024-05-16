@@ -30,7 +30,6 @@ export default function FileUploadDropzone(props) {
             alt=""
             width={ 100 }
             height={ 100 }
-            objectFit="cover"
           />
           { (file.size / (1024 * 1024)).toFixed(2) } MB
         </div>
@@ -58,6 +57,13 @@ export default function FileUploadDropzone(props) {
       <div>
         { thumbnails }
       </div>
+      <Image
+        src="https://images.unsplash.com/photo-1702454460642-33a8fb1ef501?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        // Revoke data uri after image is loaded
+        alt=""
+        width={ 100 }
+        height={ 100 }
+      />
     </section>
   );
 }
